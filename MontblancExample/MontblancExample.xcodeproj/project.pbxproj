@@ -14,6 +14,8 @@
 		E72C570021009A9100857376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72C56FE21009A9100857376 /* LaunchScreen.storyboard */; };
 		E72C571321009AFC00857376 /* Montblanc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C570E21009A9C00857376 /* Montblanc.framework */; };
 		E72C571421009AFC00857376 /* Montblanc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E72C570E21009A9C00857376 /* Montblanc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E72C57192100A4A800857376 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C57182100A4A800857376 /* CaptureSession.swift */; };
+		E72C571B2100A4D000857376 /* CaptureAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C571A2100A4D000857376 /* CaptureAnalyzer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		E72C56FF21009A9100857376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72C570121009A9100857376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72C570721009A9C00857376 /* Montblanc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Montblanc.xcodeproj; path = ../Montblanc.xcodeproj; sourceTree = "<group>"; };
+		E72C57182100A4A800857376 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
+		E72C571A2100A4D000857376 /* CaptureAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureAnalyzer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 			children = (
 				E72C56F521009A8D00857376 /* AppDelegate.swift */,
 				E72C56F721009A8D00857376 /* ViewController.swift */,
+				E72C57182100A4A800857376 /* CaptureSession.swift */,
+				E72C571A2100A4D000857376 /* CaptureAnalyzer.swift */,
 				E72C56F921009A8D00857376 /* Main.storyboard */,
 				E72C56FC21009A9100857376 /* Assets.xcassets */,
 				E72C56FE21009A9100857376 /* LaunchScreen.storyboard */,
@@ -229,6 +235,8 @@
 			files = (
 				E72C56F821009A8D00857376 /* ViewController.swift in Sources */,
 				E72C56F621009A8D00857376 /* AppDelegate.swift in Sources */,
+				E72C571B2100A4D000857376 /* CaptureAnalyzer.swift in Sources */,
+				E72C57192100A4A800857376 /* CaptureSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
