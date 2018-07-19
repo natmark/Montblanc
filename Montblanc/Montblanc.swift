@@ -49,8 +49,8 @@ public struct Montblanc {
             return
         }
 
-        let task = URLSession.shared.downloadTask(with: url) {  (url, urlResponse, error) in
-            if let _ = error {
+        let task = URLSession.shared.downloadTask(with: url) {  (url, _, error) in
+            if error != nil {
                 block(Result.failure(.failedToDownload))
                 return
             }

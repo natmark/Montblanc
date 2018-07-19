@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		E72C56E521008D7100857376 /* Montblanc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C56E421008D7100857376 /* Montblanc.swift */; };
 		E72C56E621008D7100857376 /* Montblanc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C56E421008D7100857376 /* Montblanc.swift */; };
+		E72C571C2100AD5A00857376 /* Montblanc.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B705E2100760D00F9E4EC /* Montblanc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E74B70652100760D00F9E4EC /* Montblanc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74B705B2100760D00F9E4EC /* Montblanc.framework */; };
 		E74B706A2100760D00F9E4EC /* MontblancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B70692100760D00F9E4EC /* MontblancTests.swift */; };
 		E74B706C2100760D00F9E4EC /* Montblanc.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B705E2100760D00F9E4EC /* Montblanc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E74B7093210076AF00F9E4EC /* Montblanc_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B7091210076AF00F9E4EC /* Montblanc_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,6 @@
 		E74B70692100760D00F9E4EC /* MontblancTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontblancTests.swift; sourceTree = "<group>"; };
 		E74B706B2100760D00F9E4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E74B708F210076AF00F9E4EC /* Montblanc_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Montblanc_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E74B7091210076AF00F9E4EC /* Montblanc_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Montblanc_OSX.h; sourceTree = "<group>"; };
-		E74B7092210076AF00F9E4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 			children = (
 				E74B705D2100760D00F9E4EC /* Montblanc */,
 				E74B70682100760D00F9E4EC /* MontblancTests */,
-				E74B7090210076AF00F9E4EC /* Montblanc OSX */,
 				E74B705C2100760D00F9E4EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,15 +100,6 @@
 			path = MontblancTests;
 			sourceTree = "<group>";
 		};
-		E74B7090210076AF00F9E4EC /* Montblanc OSX */ = {
-			isa = PBXGroup;
-			children = (
-				E74B7091210076AF00F9E4EC /* Montblanc_OSX.h */,
-				E74B7092210076AF00F9E4EC /* Info.plist */,
-			);
-			path = "Montblanc OSX";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,7 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74B7093210076AF00F9E4EC /* Montblanc_OSX.h in Headers */,
+				E72C571C2100AD5A00857376 /* Montblanc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +535,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Montblanc OSX/Info.plist";
+				INFOPLIST_FILE = Montblanc/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,7 +565,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Montblanc OSX/Info.plist";
+				INFOPLIST_FILE = Montblanc/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
