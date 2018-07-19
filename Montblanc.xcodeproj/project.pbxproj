@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72C56E521008D7100857376 /* Montblanc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C56E421008D7100857376 /* Montblanc.swift */; };
+		E72C56E621008D7100857376 /* Montblanc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C56E421008D7100857376 /* Montblanc.swift */; };
 		E74B70652100760D00F9E4EC /* Montblanc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74B705B2100760D00F9E4EC /* Montblanc.framework */; };
 		E74B706A2100760D00F9E4EC /* MontblancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B70692100760D00F9E4EC /* MontblancTests.swift */; };
 		E74B706C2100760D00F9E4EC /* Montblanc.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B705E2100760D00F9E4EC /* Montblanc.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E72C56E421008D7100857376 /* Montblanc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Montblanc.swift; sourceTree = "<group>"; };
 		E74B705B2100760D00F9E4EC /* Montblanc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Montblanc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74B705E2100760D00F9E4EC /* Montblanc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Montblanc.h; sourceTree = "<group>"; };
 		E74B705F2100760D00F9E4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E74B705E2100760D00F9E4EC /* Montblanc.h */,
+				E72C56E421008D7100857376 /* Montblanc.swift */,
 				E74B705F2100760D00F9E4EC /* Info.plist */,
 			);
 			path = Montblanc;
@@ -196,12 +200,14 @@
 				TargetAttributes = {
 					E74B705A2100760D00F9E4EC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					E74B70632100760D00F9E4EC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					E74B708E210076AF00F9E4EC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -253,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72C56E521008D7100857376 /* Montblanc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72C56E621008D7100857376 /* Montblanc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 		E74B70702100760D00F9E4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -422,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.Montblanc;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,6 +440,7 @@
 		E74B70712100760D00F9E4EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -455,6 +466,7 @@
 		E74B70732100760D00F9E4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
 				INFOPLIST_FILE = MontblancTests/Info.plist;
@@ -473,6 +485,7 @@
 		E74B70742100760D00F9E4EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
 				INFOPLIST_FILE = MontblancTests/Info.plist;
@@ -491,6 +504,7 @@
 		E74B7094210076AF00F9E4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -512,6 +526,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -519,6 +534,7 @@
 		E74B7095210076AF00F9E4EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
