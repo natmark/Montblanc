@@ -5,6 +5,14 @@
         <img src="https://travis-ci.com/natmark/Montblanc.svg?token=nzmukddH8XeX8xpNA4qP&branch=master"
              alt="Build Status">
     </a>
+    <a href="https://cocoapods.org/pods/Montblanc">
+        <img src="https://img.shields.io/cocoapods/v/Montblanc.svg?style=flat"
+             alt="Pods Version">
+    </a>
+    <a href="https://github.com/natmark/Montblanc/">
+        <img src="https://img.shields.io/cocoapods/p/Montblanc.svg?style=flat"
+             alt="Platforms">
+    </a>
     <a href="https://github.com/Carthage/Carthage">
         <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat"
              alt="Carthage Compatible">
@@ -52,6 +60,12 @@ Montblanc.compile(path) { result in
 
 ```
 ## Installation
+### [CocoaPods](https://cocoapods.org/pods/Montblanc)
+Add the following to your `Podfile`:
+```
+  pod "Montblanc"
+```
+
 ### [Carthage](https://github.com/Carthage/Carthage)
 Add the following to your `Cartfile`:
 ```
